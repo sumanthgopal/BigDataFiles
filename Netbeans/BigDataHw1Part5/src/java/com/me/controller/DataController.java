@@ -54,7 +54,7 @@ public class DataController extends AbstractController {
                 db.getCollection("access").drop();
                 MongoCollection<Document> collection = db.getCollection("access");
                 // Reads the input file
-                reader = new BufferedReader(new FileReader("/Users/sgopalakrishna/Documents/BigData/access.txt"));
+                reader = new BufferedReader(new FileReader("/Users/sgopalakrishna/Documents/BigDataFiles/access.txt"));
                 String currentLine;
                 while ((currentLine = reader.readLine()) != null) {
                     String[] words = currentLine.split("\\s");

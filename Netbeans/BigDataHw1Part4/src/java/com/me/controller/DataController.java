@@ -60,9 +60,9 @@ public class DataController extends AbstractController {
                 MongoCollection<Document> ratingsCollection = db.getCollection("ratings");
                 MongoCollection<Document> tagsCollection = db.getCollection("tags");
                 // Reads the input file
-                movies = new BufferedReader(new FileReader("/Users/sgopalakrishna/Documents/BigData/movies.dat"));
+                movies = new BufferedReader(new FileReader("/Users/sgopalakrishna/Documents/BigDataFiles/movies.dat"));
                 ratings = new BufferedReader(new FileReader("/Users/sgopalakrishna/Downloads/ratings.dat"));
-                tags = new BufferedReader(new FileReader("/Users/sgopalakrishna/Documents/BigData/tags.dat"));
+                tags = new BufferedReader(new FileReader("/Users/sgopalakrishna/Documents/BigDataFiles/tags.dat"));
                 String currentLine;
                 while ((currentLine = ratings.readLine()) != null) {
                     String[] words = currentLine.split("(::)");
