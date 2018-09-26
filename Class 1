@@ -1,0 +1,63 @@
+Web 1.0 - Users are consumers of mainly static resources - 1990s
+web 2.0 - not only consumers, producers of resources - 2000s
+3.0 - Connectedness- 2010s
+
+Horizontal Scalability -  Sharding
+Vertical Scalability - 1 single system, max out components
+Hadoop - File System (not a db)
+
+Document db - {key:value} -pair
+
+Class 2
+Primitive - int,float
+Wrapper class - Integer,Float
+
+In Java
+Everything read and print is a string.
+
+
+JSON Wrapper classes: Gson, Json;
+
+
+Document --> Collection --> DB
+{key1:val1,key2:{k3:v3,k4:v4}, key5:[]}
+
+MR framework will pass documents in the collection one by one to mappers.
+
+Every current document is accessed by using "this"
+
+var mapper1 = function(){
+emit(this.k1,val)
+}
+
+var reducer1 = function()
+
+mongoimport --db mydb --collection nyse --type csv --headerline --file \filepath
+
+Map Reduce ex:
+
+var mapper1 = function(){
+... emit(this.stock_symbol, this.stock_price_close);
+... }
+
+var reducer1 = function(key,values){}
+
+function(key,values){
+  var maxPrice = 0;
+  values.forEach(function(v){
+    if(v > maxPrice){
+      maxPrice = v;
+    }
+  });
+  return maxPrice;
+}
+
+Note: var mapper1 = function (){ emit(this.stock_symbol, {"stockpriceclose":this.stock_price_close}); }
+var reducer1 = function(key,values){   var maxPrice = 0;   values.forEach(function(v){     if(v.stockpriceclose > maxPrice){       maxPrice = v.stockpriceclose;     }   });   return {"MaxPrice":maxPrice}; }
+db.nyse.mapReduce(mapper1,reducer1,{out:"mr-out1"})
+
+Ex2 :
+var map1 = function(){emit(this.stock_symbol,1);}
+> var red1 = function(key, values){ return key };
+> db.nyse.mapReduce(map1,red1,{out:"inline1"})
+ 
