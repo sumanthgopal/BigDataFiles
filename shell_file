@@ -1,0 +1,5 @@
+max=26
+for (( i=0; i <= $max; ++i ))
+do
+    echo "mongoimport -d db_name -c collection_name --type csv --file filename.csv --headerline --host hostname:portnumber --authenticationDatabase admin --username 'iamauser' --password 'pwd123'"
+done
