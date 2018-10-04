@@ -60,4 +60,3 @@ Ex2 :
 var map1 = function(){emit(this.stock_symbol,1);}
 > var red1 = function(key, values){ return key };
 > db.nyse.mapReduce(map1,red1,{out:"inline1"})
- 
