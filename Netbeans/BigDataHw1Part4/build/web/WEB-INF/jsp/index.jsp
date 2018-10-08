@@ -5,7 +5,7 @@
 <html>
 
     <body>
-        <h1>Do you want to add access.log data?</h1>
+        <h1>Do you want to search with added data?</h1>
         <form action="search.htm" method="post">
             <input type="submit" value="Add">
         </form>

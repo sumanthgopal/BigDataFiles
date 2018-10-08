@@ -45,7 +45,7 @@ public class DataController extends AbstractController {
             HttpServletRequest request,
             HttpServletResponse response) throws Exception {
         if (request.getRequestURI().endsWith("search.htm")) {
-            BufferedReader movies = null;
+            /*BufferedReader movies = null;
             BufferedReader ratings = null;
             BufferedReader tags = null;
             try {
@@ -60,9 +60,9 @@ public class DataController extends AbstractController {
                 MongoCollection<Document> ratingsCollection = db.getCollection("ratings");
                 MongoCollection<Document> tagsCollection = db.getCollection("tags");
                 // Reads the input file
-                movies = new BufferedReader(new FileReader("/Users/sgopalakrishna/Documents/BigDataFiles/movies.dat"));
-                ratings = new BufferedReader(new FileReader("/Users/sgopalakrishna/Downloads/ratings.dat"));
-                tags = new BufferedReader(new FileReader("/Users/sgopalakrishna/Documents/BigDataFiles/tags.dat"));
+                movies = new BufferedReader(new FileReader("/Users/sgopalakrishna/Downloads/ml10M100K/movies.dat"));
+                ratings = new BufferedReader(new FileReader("/Users/sgopalakrishna/Downloads/ml10M100K/ratings.dat"));
+                tags = new BufferedReader(new FileReader("/Users/sgopalakrishna/Downloads/ml10M100K/tags.dat"));
                 String currentLine;
                 while ((currentLine = ratings.readLine()) != null) {
                     String[] words = currentLine.split("(::)");
@@ -101,7 +101,7 @@ public class DataController extends AbstractController {
                 } catch (IOException e) {
                     System.out.println("File cannot be closed " + e.getMessage());
                 }
-            }
+            }*/
             return new ModelAndView("search");
         } else if (request.getRequestURI().endsWith("results.htm")) {
             MongoClient mongoClient = new MongoClient();
