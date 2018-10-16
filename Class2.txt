@@ -1,1 +1,110 @@
 Hadoop
+
+Hadoop Modules:
+ - HDFS - Hadoop Dist file system,
+ - It has map reduce
+ - Yarn (Yet Another Resource Negotiater)
+ - Common
+
+ What is the problem with Local System?
+ Why do we need Distributed FS?
+
+ - Storage Capacity
+
+ ____________________
+
+ Hbase:
+
+ Database that runs on Hadoop
+
+ Yahoo - Running biggest hadoop cluster
+
+Hive
+Pig
+
+Why are Files in HDFS are not editable?
+They are not in same place
+
+Hadoop Req:
+Java, Unix, Ssh passwordless
+
+JPS: Java command
+____________________
+
+FS Operation on local file system.
+cd,ls,mkdir
+
+Any Unix command
+hadoop fs -ls
+hadoop fs -mkdir
+
+hadoop fs -cat /folder/file
+
+____________________
+Mongodb vs Hadoop - Better
+Different systems
+If we want DB - MongoDB
+File Transfer - hadoop
+Hadoop is not a database.
+We can run Database on Hadoop.
+Running Mysql on top of windows is similar to running hbase on hadoop
+
+____________________
+YAML - Yet Another Markup Language/ Yaml Aint Markup Language
+
+YARN - Yet Another Resource Negotiator
+____________________
+
+
+Block - Part of each file
+____________________
+
+Hbase stores data in HDFS
+
+____________________
+
+Which distribution of Hadoop to use: - Apache distribution
+
+HortanWorks
+Cloudera
+MapR
+____________________
+
+JPS - Java Process Service
+____________________
+
+Hadoop Data Types:
+
+Key
+Value
+
+____________________
+Wrapper classic
+
+Primitive DataTypes       |     Wrapper classic
+--------------------        --------------------
+int                           Integer
+etc
+
+____________________
+
+Auto Boxing and Unboxing
+
+int i2 = 5;
+Integer i2 = new Integer(5);
+Integer i3 = 5; ---> Auto Boxed into an object;
+int i4 = new Integer(5);  --> Unbox
+
+____________________
+
+Hadoop data types:
+
+IntWritable x = new IntWritable(5);
+IntWritable x = new SubClassOfIntWritable(5);
+IntWritable x = new AnyClassThatImplementsTheWritableInterfaceThatIntWritableImplements();
+
+Value --> Writable
+Key --> WritableComparable
+
+StockWritable implements WritableComparable - Key
+StockWritable implements Writable - Value

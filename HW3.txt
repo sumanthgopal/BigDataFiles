@@ -1,0 +1,43 @@
+PART 1. Reading Assignment [Chapters Attached]
+
+   Ch09_TextSearch
+
+   Ch10_WiredTiger
+
+   Ch13_Administration
+
+
+
+PART 2. Modify the search functionality of HW1-Part4 or HW1-Part4 to use Text Search (From Part 1).
+
+
+
+PART 3. Read the following paper (attached), and write a short summary/report.
+
+Google has, over the past few years, built out a massively scalable infrastructure for its search engine and other applications, including Google Maps, Google Earth, GMail, Google Finance, and Google Apps. Google’s approach was to solve the problem at every level of the application stack. The goal was to build a scalable infrastructure for parallel processing of large amounts of data. Google therefore created a full mechanism that included a distributed file system, a column-family-oriented data store, a distributed coordination system, and a MapReduce-based parallel algorithm execution environment. Graciously enough, Google published and presented a series of papers explaining some of the key pieces of its infrastructure. The most important of these publications are as follows. Read the following papers, and write a short summary/report for each paper.
+
+http://static.googleusercontent.com/media/research.google.com/en/us/archive/gfs-sosp2003.pdf
+
+http://static.googleusercontent.com/media/research.google.com/en/us/archive/mapreduce-osdi04.pdf
+
+http://static.googleusercontent.com/media/research.google.com/en/us/archive/bigtable-osdi06.pdf
+
+http://static.googleusercontent.com/media/research.google.com/en/us/archive/chubby-osdi06.pdf
+
+
+
+PART 4. Reading Assignment [Attached]
+
+   Ch01_Meet Hadoop.pdf
+
+
+
+PART 5. Install Hadoop. See the attached step-by-step tutorial.
+
+(Tutorial may be for the previous version, but you may use the latest versions.
+
+   1. Ubuntu Installation [for Windows Computers only. MacOS has UNIX Kernel already]
+
+   2. Hadoop Installation [Steps are the same for both Windows and MacOS, but MacOS may be slightly different]
+
+   http://localhost:9870/dfshealth.html#tab-datanode
