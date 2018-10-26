@@ -1,0 +1,1 @@
+Part 3 - hadoop jar /Users/sgopalakrishna/Documents/BigDataFiles/Homework4Sumanth/Part3/Part3.jar accessLog.AccessLogDriver /logs /logOutput

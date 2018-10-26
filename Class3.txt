@@ -1,0 +1,13 @@
+MapReduce optimization
+- Use a combiner if possible
+- use the most appropriate input format
+- Use most compatible writer type
+
+If the mapreduce operative is commutative and associative, then the same reducer could be used as a combiner.
+
+
+______________________________
+
+1. Composite Key
+2. Sorting the keys - Use the second part of the key.
+3. Group the keys - Use the 1st part of the key.

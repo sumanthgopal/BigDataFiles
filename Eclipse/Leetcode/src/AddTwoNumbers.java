@@ -1,6 +1,5 @@
 import java.text.DecimalFormat;
 
-import java.math.double;
 
 public class AddTwoNumbers {
 
@@ -25,8 +24,8 @@ public class AddTwoNumbers {
 		            l2 = l2.next;
 		        }
 		        System.out.println(resl2);
-		        double res = resl1 + resl2;
-		        Math.pow(a, b)
+		        int res = resl1 + resl2;
+		        Math.pow(a, b);
 		        ListNode result = new ListNode(0);
 		        ListNode pointer = result;
 		        if(res==0){
