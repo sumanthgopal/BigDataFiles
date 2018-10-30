@@ -11,3 +11,32 @@ ______________________________
 1. Composite Key
 2. Sorting the keys - Use the second part of the key.
 3. Group the keys - Use the 1st part of the key.
+
+
+--------------------------------
+MR optimization
+- Use the most compact writable Type
+ - Use the most appropriate InputFormatClass
+ - Use the most appropriate OutputFrmatClass
+ - Use the Combiner
+- If the data is not distributed uniformly, then a custom partitioner may help
+
+______________________________
+
+1000 Keys in each mapper
+1M values for each key in each mapper
+100 mappers
+
+If no combiner, values that sent over network to reducers - 100 Billion values
+
+If combiner, values that sent over network to reducers - 100 thousand values
+
+______________________________
+
+10 Keys in each mapper
+10B values for each mapper
+100 mappers
+
+If no combiner, values that sent over network to reducers - 1000 Billion values(1 Trillion)
+
+If combiner, values that sent over network to reducers - 1000 values
