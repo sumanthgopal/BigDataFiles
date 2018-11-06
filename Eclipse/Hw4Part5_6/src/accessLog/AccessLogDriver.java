@@ -20,7 +20,7 @@ public class AccessLogDriver {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 		Configuration conf = new Configuration();
-		Job job = Job.getInstance(conf, "Access Log");
+		Job job = Job.getInstance(conf, "TextInputFormat");
 		job.setJarByClass(AccessLogDriver.class);
 
 		// Specify Input Path

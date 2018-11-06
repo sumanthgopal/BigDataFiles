@@ -12,7 +12,6 @@ public class NlineIFMapper extends Mapper<LongWritable, Text, Text, IntWritable>
 	protected void map(LongWritable key, Text value, Mapper<LongWritable, Text,  Text, IntWritable>.Context context)
 			throws IOException, InterruptedException {
 
-		System.out.println(key);
 		String[] fields = value.toString().split(" ");
 		for(String s:fields) {
 			Text t = new Text(s);

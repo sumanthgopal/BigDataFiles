@@ -18,7 +18,7 @@ public class FixedLengthIFDriver {
 	public static void main(String[] args) throws IllegalArgumentException, IOException, ClassNotFoundException, InterruptedException {
 		Configuration conf = new Configuration();
 		FixedLengthInputFormat.setRecordLength(conf, 5);
-	     Job job = Job.getInstance(conf, "word count");
+	     Job job = Job.getInstance(conf, "FixedLengthIFDriver");
 	     //System.out.println(args[0]);
 	     //System.out.println(args[1]);
 	     job.setJarByClass(FixedLengthIFDriver.class);

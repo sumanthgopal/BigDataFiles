@@ -68,7 +68,12 @@ public class PutMergeDriver {
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(FloatWritable.class);
         FileInputFormat.addInputPath(job, new Path(args[0]));
-        FileOutputFormat.setOutputPath(job, new Path(args[2]));
+        Path outputPath = new Path(args[1]);
+        FileSystem hdfs1 = FileSystem.get(conf);
+		if (hdfs1.exists(outputPath)) {
+			hdfs1.delete(outputPath, true);
+		}
+		FileOutputFormat.setOutputPath(job, outputPath);
         try {
 
             // For the job to wait unless one part of job is over

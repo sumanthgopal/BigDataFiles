@@ -18,7 +18,7 @@ public class NlineIFDriver {
 	public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 		Configuration conf = new Configuration();
 		conf.setInt("mapreduce.input.lineinputformat.linespermap",3);
-		Job job = Job.getInstance(conf, "Access Log");
+		Job job = Job.getInstance(conf, "NLineInputFormat");
 		job.setJarByClass(NlineIFDriver.class);
 
 		job.setInputFormatClass(NLineInputFormat.class);
@@ -29,7 +29,7 @@ public class NlineIFDriver {
 		job.setReducerClass(NlineIFReducer.class);
 
 		//LazyOutputFormat.setOutputFormatClass(job, TextOutputFormat.class);
-		//job.setNumReduceTasks(1);
+		job.setNumReduceTasks(1);
 
 		// Specify Key Value
 		job.setOutputKeyClass(Text.class);

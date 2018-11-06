@@ -20,9 +20,9 @@ public class SecondarySortDriver {
 		Job job = Job.getInstance(conf,"SecondarySort");
 		job.setJarByClass(SecondarySortDriver.class);
 		
-		//job.setPartitionerClass(NaturalKeyPartitioner.class);
-		//job.setGroupingComparatorClass(GroupingComparator.class);
-		//job.setSortComparatorClass(SecondarySortComparator.class);
+		job.setPartitionerClass(NaturalKeyPartitioner.class);
+		job.setGroupingComparatorClass(GroupingComparator.class);
+		job.setSortComparatorClass(SecondarySortComparator.class);
 		
 		job.setMapperClass(Lab3Mapper.class);
 		job.setReducerClass(Lab3Reducer.class);

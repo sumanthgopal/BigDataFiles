@@ -1,0 +1,5 @@
+CompositeKeyWritable [zipCode=2108, bikeId=B00456]
+CompositeKeyWritable [zipCode=2116, bikeId=B00554]
+CompositeKeyWritable [zipCode=2215, bikeId=B00554]
+CompositeKeyWritable [zipCode=97217, bikeId=B00468]
+CompositeKeyWritable [zipCode=zip_code, bikeId=bike_nr]

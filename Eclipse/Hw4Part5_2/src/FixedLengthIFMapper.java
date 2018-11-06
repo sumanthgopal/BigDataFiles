@@ -9,8 +9,6 @@ public class FixedLengthIFMapper extends Mapper<LongWritable, BytesWritable, Lon
 	protected void map(LongWritable key, BytesWritable value, Context context)
 			throws IOException, InterruptedException {
 			
-		System.out.println(key);
-		System.out.println(new String(value.getBytes()));
 		context.write(key,value);
 	}
 }

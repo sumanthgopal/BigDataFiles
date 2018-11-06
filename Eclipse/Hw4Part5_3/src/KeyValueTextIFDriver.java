@@ -17,7 +17,7 @@ public class KeyValueTextIFDriver {
 	public static void main(String[] args) throws IllegalArgumentException, IOException, ClassNotFoundException, InterruptedException {
 		Configuration conf = new Configuration();
 		conf.set("key.value.separator.in.input.line", ",");
-		Job job = Job.getInstance(conf, "Access Log");
+		Job job = Job.getInstance(conf, "KeyValueTextInputFormat");
 		job.setJarByClass(KeyValueTextIFDriver.class);
 
 		// Specify Input Path

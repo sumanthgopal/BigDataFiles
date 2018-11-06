@@ -1,0 +1,8 @@
+hadoop jar /Users/sgopalakrishna/Documents/BigDataFiles/Homework4_Sumanth/Part3/Hw4Part3.jar accessLog.AccessLogDriver /logs /oplogs
+hadoop jar /Users/sgopalakrishna/Documents/BigDataFiles/Homework4_Sumanth/Part4/Hw4Part4.jar putmerge.PutMergeDriver /nyse /NYSEop/mergeOutput /NYSEopfinal/op
+hadoop jar /Users/sgopalakrishna/Documents/BigDataFiles/Homework4_Sumanth/Part5_1/Hw4Part5_1.jar hw4part5q1.Hw4Part5ComFileIFDriver /combineip /combineop
+hadoop jar /Users/sgopalakrishna/Documents/BigDataFiles/Homework4_Sumanth/Part5_2/Hw4Part5_2.jar FixedLengthIFDriver /fixedip /fixedop
+hadoop jar /Users/sgopalakrishna/Documents/BigDataFiles/Homework4_Sumanth/Part5_3/Hw4Part5_3.jar KeyValueTextIFDriver /keyvalue.txt /keyvalop
+hadoop jar /Users/sgopalakrishna/Documents/BigDataFiles/Homework4_Sumanth/Part5_4/Hw4Part5_4.jar NlineIFDriver /nlineip /nlineop
+hadoop jar /Users/sgopalakrishna/Documents/BigDataFiles/Homework4_Sumanth/Part5_5/Hw4Part5_5.jar SeqFileIFDriver /seqip /seqop
+hadoop jar /Users/sgopalakrishna/Documents/BigDataFiles/Homework4_Sumanth/Part5_6/Hw4Part5_6.jar accessLog.AccessLogDriver /logs /textipformat

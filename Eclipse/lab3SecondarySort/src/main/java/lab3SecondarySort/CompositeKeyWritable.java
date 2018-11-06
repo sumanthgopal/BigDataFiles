@@ -16,7 +16,8 @@ public class CompositeKeyWritable implements Writable, WritableComparable<Compos
 	}
 
 	public CompositeKeyWritable(String zipCode, String bikeId) {
-		super();
+		this.zipCode = zipCode;
+		this.bikeId = bikeId;
 	}
 
 	@Override

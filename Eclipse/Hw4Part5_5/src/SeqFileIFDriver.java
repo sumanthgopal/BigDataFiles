@@ -22,7 +22,7 @@ public class SeqFileIFDriver {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException{
 		Configuration conf = new Configuration();
-		Job job = Job.getInstance(conf, "Access Log");
+		Job job = Job.getInstance(conf, "SequenceFileInputFormat");
 		job.setJarByClass(SeqFileIFDriver.class);
 
 		job.setInputFormatClass(SequenceFileInputFormat.class);
@@ -31,7 +31,7 @@ public class SeqFileIFDriver {
 
 		job.setReducerClass(SeqFileIFReducer.class);
 
-		job.setNumReduceTasks(0);
+		job.setNumReduceTasks(1);
 
 		job.setMapOutputKeyClass(LongWritable.class);
 		job.setMapOutputValueClass(Text.class);

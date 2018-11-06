@@ -20,7 +20,7 @@ public class PutMergeMapper extends Mapper<LongWritable, Text, Text, FloatWritab
 		try {
 			f.set(Float.parseFloat(fields[4]));
 		}catch(Exception e) {
-			System.out.println("Error in float");
+			//System.out.println("Error in float");
 			f.set(0);
 		}
 		context.write(t, f);

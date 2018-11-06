@@ -14,9 +14,9 @@ import org.apache.hadoop.util.LineReader;
 
 public class CombineFileLineRecordReader extends RecordReader<WordOffset, Text> {
 
-	private long startOffset; // offset of the chunk;
-	private long end; // end of the chunk;
-	private long pos; // current pos
+	private long startOffset; 
+	private long end; 
+	private long pos; 
 	private FileSystem fs;
 	private Path path;
 	private WordOffset key;
@@ -34,7 +34,6 @@ public class CombineFileLineRecordReader extends RecordReader<WordOffset, Text> 
 		this.end = startOffset + split.getLength(index);
 		boolean skipFirstLine = false;
 
-		// open the file
 		fileIn = fs.open(path);
 		if (startOffset != 0) {
 			skipFirstLine = true;
@@ -42,7 +41,7 @@ public class CombineFileLineRecordReader extends RecordReader<WordOffset, Text> 
 			fileIn.seek(startOffset);
 		}
 		reader = new LineReader(fileIn);
-		if (skipFirstLine) { // skip first line and re-establish "startOffset".
+		if (skipFirstLine) { 
 			startOffset += reader.readLine(new Text(), 0, (int) Math.min((long) Integer.MAX_VALUE, end - startOffset));
 		}
 		this.pos = startOffset;
