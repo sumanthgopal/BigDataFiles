@@ -1,1 +1,1 @@
-[[{"location":"/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home","type":"JRE","hints":{"EXECUTION_ENVIRONMENT":"JavaSE-1.8"}},"jre:jre:1.8.0"],[{"location":"/Users/sgopalakrishna/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.9.1/hadoop-mapreduce-client-core-2.9.1.jar","type":"JAR","hints":{}},"org.apache.hadoop:hadoop-mapreduce-client-core:2.9.1"],[{"location":"/Users/sgopalakrishna/.m2/repository/org/apache/hadoop/hadoop-common/2.9.1/hadoop-common-2.9.1.jar","type":"JAR","hints":{}},"org.apache.hadoop:hadoop-common:2.9.1"]]
+{}

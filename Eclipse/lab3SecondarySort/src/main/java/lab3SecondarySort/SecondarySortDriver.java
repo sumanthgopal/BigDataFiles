@@ -32,9 +32,6 @@ public class SecondarySortDriver {
 		job.setMapOutputKeyClass(CompositeKeyWritable.class);
 		job.setMapOutputValueClass(NullWritable.class);
 		
-		job.setOutputKeyClass(CompositeKeyWritable.class);
-		job.setOutputValueClass(NullWritable.class);
-		
 		FileInputFormat.addInputPath(job, inputPath);
 		job.setInputFormatClass(TextInputFormat.class);
 		

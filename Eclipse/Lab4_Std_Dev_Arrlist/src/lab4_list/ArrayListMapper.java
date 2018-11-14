@@ -20,7 +20,7 @@ public class ArrayListMapper extends Mapper<LongWritable,Text, Text,DoubleWritab
 		String values[] = value.toString().split(",");
 		try {
 			brand.set(values[0]);
-			rating.set(Double.parseDouble(values[2]));
+			rating.set(Double.parseDouble(values[3]));
 		}catch(Exception e) {
 			
 		}

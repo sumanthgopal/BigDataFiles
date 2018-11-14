@@ -8,7 +8,6 @@ public class NaturalKeyPartitioner extends Partitioner<CompositeKeyWritable,Null
 	@Override
 	public int getPartition(CompositeKeyWritable key, NullWritable value, int numOfReducedTasks) {
 		int hash = key.getZipCode().hashCode();
-		System.out.println("Partitioner "+numOfReducedTasks);
 		int partition = hash % numOfReducedTasks;
 		return partition;
 	}

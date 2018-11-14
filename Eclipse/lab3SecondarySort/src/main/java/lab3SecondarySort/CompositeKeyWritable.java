@@ -45,7 +45,6 @@ public class CompositeKeyWritable implements Writable, WritableComparable<Compos
 		int result = zipCode.compareTo(o.zipCode);
 		if (result == 0) {
 			result = bikeId.compareTo(o.bikeId);
-
 		}
 		return result;
 	}
