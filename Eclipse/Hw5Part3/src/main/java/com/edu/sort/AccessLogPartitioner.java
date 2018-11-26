@@ -5,7 +5,7 @@ import org.apache.hadoop.mapreduce.Partitioner;
 
 import com.edu.writable.AccessLogWritable;
 
-public class AccessLogPartitioner extends Partitioner<AccessLogWritable, IntWritable>{
+public class AccessLogPartitioner extends Partitioner<AccessLogWritable, IntWritable> {
 
 	@Override
 	public int getPartition(AccessLogWritable key, IntWritable value, int numPartitions) {

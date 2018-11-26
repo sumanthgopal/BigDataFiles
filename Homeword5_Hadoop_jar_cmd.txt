@@ -1,0 +1,16 @@
+Part 2
+hadoop jar ~/Documents/BigDataFiles/Homework5_Sumanth/Part2/Hw5Part2.jar com.edu.Driver.DateFindDriver /nyse /hw5ops/part2
+hdfs dfs -cat /hw5ops/part2/part-r-00000
+
+hadoop jar ~/Documents/BigDataFiles/Homework5_Sumanth/Part3/Hw5Part3.jar com.edu.driver.AccessLogSortDriver /logs /hw5ops/part3
+hdfs dfs -cat /hw5ops/part3/part-r-00000
+
+hadoop jar ~/Documents/BigDataFiles/Homework5_Sumanth/Part4/Hw5Part4.jar com.edu.driver.AverageNyseDriver /nyse /hw5ops/part4
+hdfs dfs -cat /hw5ops/part4/part-r-00000
+
+
+hadoop jar ~/Documents/BigDataFiles/Homework5_Sumanth/Part5/Hw5Part5.jar com.edu.driver.MovieLensDriver /ratings.dat /hw5ops/part5
+hdfs dfs -cat /hw5ops/part5/part-r-00000
+
+hadoop jar ~/Documents/BigDataFiles/Homework5_Sumanth/Part6/Hw5Part6.jar com.edu.driver.MovieLensOptiDriver /ratings.dat /hw5ops/part6
+hdfs dfs -cat /hw5ops/part6/part-r-00000

@@ -20,7 +20,6 @@ public class AccessLogWritable implements Writable, WritableComparable<AccessLog
 	}
 
 	public AccessLogWritable(String ip, Date accessDate) {
-		super();
 		this.ip = ip;
 		this.accessDate = accessDate;
 	}

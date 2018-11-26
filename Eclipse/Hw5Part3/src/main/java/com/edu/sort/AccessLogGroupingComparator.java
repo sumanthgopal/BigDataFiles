@@ -5,10 +5,10 @@ import org.apache.hadoop.io.WritableComparator;
 
 import com.edu.writable.AccessLogWritable;
 
-public class AccessLogGroupingComparator extends WritableComparator{
-	
+public class AccessLogGroupingComparator extends WritableComparator {
+
 	public AccessLogGroupingComparator() {
-		super(AccessLogWritable.class);
+		super(AccessLogWritable.class,true);
 	}
 
 	@Override
