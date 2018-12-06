@@ -22,10 +22,11 @@ public class Lab4Reducer extends Reducer<Text, SortedMapWritable, Text, MedianSt
 		double sum = 0.0;
 		int totalAmount = 0;
 		ratingCount.clear();
-		
+		System.out.println("reducer");
 		for(SortedMapWritable value :values){
-			
+			System.out.println("In");
 			for(Entry<WritableComparable, Writable> entry : value.entrySet()) {
+				
 				
 				Double rate = ((DoubleWritable) entry.getKey()).get();
 				int count = ((IntWritable) entry.getValue()).get();
@@ -41,14 +42,6 @@ public class Lab4Reducer extends Reducer<Text, SortedMapWritable, Text, MedianSt
 				}
 			}
 			
-//			System.err.println(totalAmount);
-//			System.err.println(sum);
-			
-//			System.err.println(ratingCount.get(1.0));
-//			System.err.println(ratingCount.get(2.0));
-//			System.err.println("----------------");
-			
-			// calculate median
 			int medianIndex = totalAmount/2;
 			int prevRatingCount = 0;
 			int RatingCount = 0;

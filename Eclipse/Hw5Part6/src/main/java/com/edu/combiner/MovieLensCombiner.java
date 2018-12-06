@@ -15,7 +15,7 @@ public class MovieLensCombiner extends Reducer<IntWritable, SortedMapWritable, I
     SortedMapWritable comOutput = new SortedMapWritable();
     
     public void reduce(IntWritable key,Iterable<SortedMapWritable> values,Context context) throws IOException, InterruptedException {
-        
+    	System.out.println("Combiner");
         for(SortedMapWritable value :values){
             
             for(Entry<WritableComparable, Writable> entry : value.entrySet()) {

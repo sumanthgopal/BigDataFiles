@@ -21,7 +21,7 @@ public class Lab4Mapper extends Mapper<LongWritable, Text, Text, SortedMapWritab
 //		System.err.println(values[0]);
 		try {
 			brand.set(values[0]);
-			rating.set(Double.parseDouble(values[2]));
+			rating.set(Double.parseDouble(values[3]));
 			
 			SortedMapWritable ratingResult = new SortedMapWritable();
 			ratingResult.put(rating, one);
@@ -30,7 +30,7 @@ public class Lab4Mapper extends Mapper<LongWritable, Text, Text, SortedMapWritab
 			context.write(brand, ratingResult);
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			System.out.println("Parse Exception "+e);
 		}
 	}
 }
