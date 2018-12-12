@@ -1,0 +1,5 @@
+Average review of the product based on product category - Mongo
+Top 100 product based rating - (Display rating and product id by passing category) - Mapreduce
+Standard deviation and median for Rating - Rating and product category - Mapreduce
+Sort by review date - Ascending/Descending. display review date, review id, customer id, product id, product categories - Mapreduce
+Something with pig

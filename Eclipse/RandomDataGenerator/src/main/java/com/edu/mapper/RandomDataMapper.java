@@ -14,7 +14,7 @@ public class RandomDataMapper extends Mapper<Object,Text,NullWritable,Text>{
 	@Override
 	protected void setup(Mapper<Object, Text, NullWritable, Text>.Context context)
 			throws IOException, InterruptedException {
-		perc = Double.parseDouble("0.1")/100;
+		perc = Double.parseDouble("0.01")/100;
 		
 	}
 
